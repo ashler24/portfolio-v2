@@ -5,20 +5,20 @@ const Header = () => {
     return (
         <NavBar>
             <Logo>
-                <span>{"<abhijeet pawar/>"}</span>
+                <a href="#greeting">{"<abhijeet pawar/>"}</a>
             </Logo>
             <NavLinks>
                 <NavLink>
-                    <a href="#greeting-section">Home</a>
+                    <a href="#greeting">Home</a>
                 </NavLink>
                 <NavLink>
-                    <a href="#skills-section">Skills</a>
+                    <a href="#skills">Skills</a>
                 </NavLink>
                 <NavLink>
-                    <a href="#project-section">Projects</a>
+                    <a href="#project">Projects</a>
                 </NavLink>
                 <NavLink>
-                    <a href="#contactme-section">Contact Me</a>
+                    <a href="#contactme">Contact Me</a>
                 </NavLink>
             </NavLinks>
         </NavBar>
@@ -39,17 +39,18 @@ const NavBar = styled.div`
     justify-content:space-between;
 `
 const Logo = styled.div`
-    span{
+    a{
         font-weight:300;
         font-size:1.5rem;
         color: #5c1ec7;
         letter-spacing:0.1rem;
+        text-decoration:none;
     }
 
     @media screen and (max-width:768px){
-        span{
+        a{
             font-weight:300;
-            font-size:1rem;
+            font-size:1.2rem;
             color: #5c1ec7;
         }
     }
@@ -80,5 +81,6 @@ const NavLink = styled.li`
 
     @media screen and (max-width:768px){
         padding-left:0.4rem;
+        font-size:0.8rem;
     }
 `

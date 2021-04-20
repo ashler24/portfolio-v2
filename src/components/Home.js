@@ -1,22 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import ContactMe from './ContactMe'
 import Greeting from './Greeting'
 import Skills from './Skills'
 
 const Home = () => {
     return (
         <Container>
-            <GreetingSection id="greeting-section">
+            <GreetingSection id="greeting">
                 <Greeting />
             </GreetingSection>
-            <SkillsSection id="skills-section">
+            <SkillsSection id="skills">
                 <Skills />
             </SkillsSection>
-            <ProjectsSection id="project-section">
+            <ProjectsSection id="project">
 
             </ProjectsSection>
-            <ContactMeSection id="contactme-section">
-
+            <ContactMeSection id="contactme">
+                <ContactMe />
             </ContactMeSection>
         </Container>
     )

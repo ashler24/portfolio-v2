@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import Typewriter from 'typewriter-effect';
 import freelancesvg from '../assets/freelance.svg'
 
+
 const Greeting = () => {
     return (
         <Container>
@@ -29,6 +30,9 @@ const Greeting = () => {
                         cool libraries and frameworks.
                     </span>
                 </GreetingBody>
+                <ContactMeButton>
+                    <a href="#contactme">Contact Me</a>
+                </ContactMeButton>
             </GreetingInfo>
             <GreetingSvg
                 initial={{ opacity: 0, x: "50%" }}
@@ -68,6 +72,27 @@ const GreetingBody = styled.div`
     span{
         letter-spacing: 0.1rem;
         font-size: 0.8rem;
+        text-align: justify;
+        word-break: break-word;
+    }
+`
+
+const ContactMeButton = styled.div`
+    margin:1rem 0 0 0;
+    a{
+        width:8rem;
+        height:auto;
+        border:1px solid #5c1ec7;
+        background-color:#e6edff;
+        color:#5c1ec7;
+        padding:0.5rem;
+        letter-spacing:0.15rem;
+        font-size:1rem;
+        border-radius:0.25rem;
+        text-decoration:none;
+        :hover{
+            cursor:pointer;
+        }
     }
 `
 
