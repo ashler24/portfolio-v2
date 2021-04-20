@@ -1,11 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const ContactMe = () => {
     return (
-        <div>
+        <Container>
             <h1>Contact Me</h1>
-        </div>
+        </Container>
     )
 }
 
 export default ContactMe
+
+const Container = styled.div`
+
+`
