@@ -33,7 +33,7 @@ const NavBar = styled.div`
     background-color: #e6edff;
     position:fixed;
     box-shadow: 0 6px 20px rgba(93,93,93,0.23);
-    z-index:5;
+    z-index:100;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -50,7 +50,7 @@ const Logo = styled.div`
     @media screen and (max-width:768px){
         a{
             font-weight:300;
-            font-size:1.2rem;
+            font-size:0.8rem;
             color: #5c1ec7;
         }
     }
@@ -81,6 +81,6 @@ const NavLink = styled.li`
 
     @media screen and (max-width:768px){
         padding-left:0.4rem;
-        font-size:0.8rem;
+        font-size:0.6rem;
     }
 `

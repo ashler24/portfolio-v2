@@ -36,9 +36,11 @@ const Container = styled.div`
     display:grid;
     grid-template-rows:repeat(3, minmax(0,0.3fr));
     grid-gap:0.2rem;
-    place-items:center;
+    justify-content:center;
+    align-items:center;
     @media screen and (max-width:768px){
-        margin:0 auto;
+        grid-template-rows:repeat(3, minmax(0,0.25fr));
+        margin:0;
         padding:0;
         grid-gap:0;
     }
@@ -53,14 +55,15 @@ const ContactMeTitle = styled.div`
 `
 
 const SocialMediaContainer = styled.div`
-    height:4rem;
+    height:5rem;
     background-color:#ffffff;
     border-radius: 0.75rem;
     box-shadow:0 6px 20px rgba(0,0,0,0.1);
     display:grid;
     grid-template-columns:repeat(3, minmax(0,1fr));
+    justify-content:center;
+    align-items:center;
     place-items:center;
-
     a > *{
         margin:1.5rem;
         color:#5c1ec7;
@@ -68,10 +71,9 @@ const SocialMediaContainer = styled.div`
     }
 
     @media screen and (max-width:768px){
-        width:80%;
         margin:-10rem 0 0 0;
         a > *{
-            margin:1rem;
+            margin:0;
             color:#5c1ec7;
         }
     }

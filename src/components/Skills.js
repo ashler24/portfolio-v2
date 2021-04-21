@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaReact, FaNodeJs, FaCss3Alt } from 'react-icons/fa'
 import { DiMongodb, DiJavascript1, DiDocker } from 'react-icons/di'
-import { AiOutlineHtml5} from 'react-icons/ai'
+import { AiOutlineHtml5 } from 'react-icons/ai'
 import skillssvg from '../assets/skills.svg'
 
 const Skills = () => {
@@ -12,6 +12,9 @@ const Skills = () => {
                 <img src={skillssvg} alt="skills-img" />
             </SkillsSvg>
             <SkillsInfo>
+                <SkillsTitle>
+                    <span>My skills include</span>
+                </SkillsTitle>
                 <SkillsIconContainer>
                     <FaReact />
                     <FaNodeJs />
@@ -57,6 +60,35 @@ const SkillsInfo = styled.div`
     padding:2rem;
     width:100%;
     height:100%;
+    display:flex;
+    position:relative;
+    z-index:5;
+`
+const SkillsTitle = styled.div`
+    display:flex;
+    position:absolute;
+    z-index:-1;
+    top:-1rem;
+    transform: translateX(-4%);
+    width:90%;
+    height:4rem;
+    padding:1rem;
+    background: rgb(144,144,255);
+    color:#ffffff;
+    font-weight:700;
+    letter-spacing:0.08rem;
+    border-radius:0.75rem;
+    background: linear-gradient(90deg, rgba(144,144,255,1) 39%, rgba(0,212,255,0.8762446657183499) 100%);
+    span{
+        transform: translate(4%,-21%);
+        padding: 0.4rem 0;
+    }
+
+    @media screen and (max-width:768px){
+        transform: translateX(-5%);
+        width:85%;
+        height:4rem;
+    }
 `
 
 const SkillsIconContainer = styled.div`
@@ -79,4 +111,5 @@ const SkillsIconContainer = styled.div`
         font-weight:300;
     }
 `
+
 

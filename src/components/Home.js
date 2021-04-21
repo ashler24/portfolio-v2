@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ContactMe from './ContactMe'
 import Greeting from './Greeting'
+import Projects from './Projects'
 import Skills from './Skills'
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
                 <Skills />
             </SkillsSection>
             <ProjectsSection id="project">
-
+                <Projects />
             </ProjectsSection>
             <ContactMeSection id="contactme">
                 <ContactMe />
@@ -58,6 +59,7 @@ const ProjectsSection = styled.section`
 `
 
 const ContactMeSection = styled.section`
+    margin:8rem 0 0 0;
     padding:8rem 0 0 0;
     @media screen and (max-width:768px){
         padding:4rem 0 0 0;
