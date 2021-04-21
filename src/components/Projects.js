@@ -28,7 +28,7 @@ const Projects = () => {
     return (
         <Container>
             {projectDetails.map(proj => (
-                <ProjectContainer>
+                <ProjectContainer key={proj.title}>
                     <Project>
                         <Card className={classes.root}>
                             <CardActionArea>

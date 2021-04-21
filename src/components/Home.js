@@ -45,22 +45,21 @@ const GreetingSection = styled.section`
 `
 
 const SkillsSection = styled.section`
-    padding:8rem 0 0 0;
+    padding:10rem 0 0 0;
     @media screen and (max-width:768px){
         padding:4rem 0 0 0;
     }
 `
 
 const ProjectsSection = styled.section`
-    padding:8rem 0 0 0;
+    padding:6rem 0 0 0;
     @media screen and (max-width:768px){
         padding:4rem 0 0 0;
     }
 `
 
 const ContactMeSection = styled.section`
-    margin:8rem 0 0 0;
-    padding:8rem 0 0 0;
+    padding:4rem 0 0 0;
     @media screen and (max-width:768px){
         padding:4rem 0 0 0;
     }
