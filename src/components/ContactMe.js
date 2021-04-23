@@ -31,7 +31,7 @@ export default ContactMe
 const Container = styled.div`
     background-color:#e6edff;
     margin:0 -8rem;
-    height:100%;
+    height:25rem;
     padding:3rem 0;
     display:grid;
     grid-template-rows:repeat(3, minmax(0,0.3fr));
@@ -39,7 +39,6 @@ const Container = styled.div`
     justify-content:center;
     align-items:center;
     @media screen and (max-width:768px){
-        grid-template-rows:repeat(3, minmax(0,0.25fr));
         margin:0;
         padding:0;
         grid-gap:0;
@@ -71,7 +70,6 @@ const SocialMediaContainer = styled.div`
     }
 
     @media screen and (max-width:768px){
-        margin:-10rem 0 0 0;
         a > *{
             margin:0;
             color:#5c1ec7;
@@ -88,7 +86,6 @@ const ContactMeQuote = styled.div`
        letter-spacing:0.5rem;
     }
     @media screen and (max-width:768px){
-        margin:-15rem 0 0 0;
         span{
             text-transform:uppercase;
             letter-spacing:0.3rem;

@@ -18,7 +18,7 @@ const Projects = () => {
         },
         media: {
             height: 250,
-            maxHeight:300,
+            maxHeight: 300,
             backgroundSize: "contain",
             backgroundPosition: "top",
         },
@@ -42,7 +42,11 @@ const Projects = () => {
                                         {proj.title}
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        {proj.description}
+                                        {proj.description.split(',').map(item => (
+                                            <>
+                                                <code>{item + ' '}</code>
+                                            </>
+                                        ))}
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -62,8 +66,9 @@ const Projects = () => {
 export default Projects
 
 const Container = styled.div`
-    margin:2rem auto;
+    margin:0 auto 2rem;
     display:grid;
+    grid-template-rows:repeat(1,minmax(0,1fr));
     grid-template-columns:repeat(2,minmax(0,1fr));
     align-items:center;
     justify-content:center;
@@ -72,13 +77,20 @@ const Container = styled.div`
     border-radius: 0.75rem;
     padding: 2rem;
     box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
+    transition:all 250ms ease-in-out 0s;
+
+    &:hover{
+        transform:translateY(-1.6%);
+        box-shadow: 0 4px 20px 20px rgb(0 0 0 / 8%);
+    }
 
     @media screen and (max-width:768px){
         grid-template-columns:repeat(1,minmax(0,1fr));
-        grid-template-rows:repeat(2,minmax(0,1fr));
+        &:hover{
+            transform:translateY(-1%);
+        }
     }
 `
-
 const ProjectContainer = styled.div`
     padding:2rem;
 `

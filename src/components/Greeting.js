@@ -30,9 +30,14 @@ const Greeting = () => {
                         cool libraries and frameworks.
                     </span>
                 </GreetingBody>
-                <ContactMeButton>
-                    <a href="#contactme">Contact Me</a>
-                </ContactMeButton>
+                <GreetingButtonsContainer>
+                    <ContactMeButton>
+                        <a href="#contactme">Contact Me</a>
+                    </ContactMeButton>
+                    <ContactMeButton style={{ "paddingLeft": "0.5rem" }}>
+                        <a href="https://drive.google.com/file/d/1vnJ_26e1mTgESeoL7h_0NL-hZ7ijaeSs/view?usp=sharing" targer="_blank" rel="noreferrer noopener">See Resume</a>
+                    </ContactMeButton>
+                </GreetingButtonsContainer>
             </GreetingInfo>
             <GreetingSvg
                 initial={{ opacity: 0, x: "50%" }}
@@ -76,6 +81,10 @@ const GreetingBody = styled.div`
         word-break: break-word;
     }
 `
+const GreetingButtonsContainer = styled.div`
+    display:flex;
+    justify-content:flex-start;
+`
 
 const ContactMeButton = styled.div`
     margin:1rem 0 0 0;
@@ -85,9 +94,9 @@ const ContactMeButton = styled.div`
         border:1px solid #5c1ec7;
         background-color:#e6edff;
         color:#5c1ec7;
-        padding:0.5rem;
+        padding:0.8rem;
         letter-spacing:0.15rem;
-        font-size:1rem;
+        font-size:0.8rem;
         border-radius:0.25rem;
         text-decoration:none;
         :hover{

@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaReact, FaNodeJs, FaCss3Alt } from 'react-icons/fa'
-import { DiMongodb, DiJavascript1, DiDocker } from 'react-icons/di'
+import { DiMongodb, DiJavascript1, DiDocker, DiJava } from 'react-icons/di'
+import { SiSpring } from 'react-icons/si'
 import { AiOutlineHtml5 } from 'react-icons/ai'
 import skillssvg from '../assets/skills.svg'
 
@@ -16,13 +17,78 @@ const Skills = () => {
                     <span>My skills include</span>
                 </SkillsTitle>
                 <SkillsIconContainer>
-                    <FaReact />
-                    <FaNodeJs />
-                    <DiMongodb />
-                    <AiOutlineHtml5 />
-                    <FaCss3Alt />
-                    <DiJavascript1 />
-                    <DiDocker />
+                    <span>
+                        <span>
+                            <FaReact />
+                        </span>
+                        <span>
+                            React JS
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <FaNodeJs />
+                        </span>
+                        <span>
+                            Node JS
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <DiMongodb />
+                        </span>
+                        <span>
+                            MongoDB
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <AiOutlineHtml5 />
+                        </span>
+                        <span>
+                            HTML5
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <FaCss3Alt />
+                        </span>
+                        <span>
+                            CSS3
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <DiJavascript1 />
+                        </span>
+                        <span>
+                            Javascript
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <DiDocker />
+                        </span>
+                        <span>
+                            Docker
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <DiJava />
+                        </span>
+                        <span>
+                            Java 8
+                        </span>
+                    </span>
+                    <span>
+                        <span>
+                            <SiSpring />
+                        </span>
+                        <span>
+                            Spring MVC
+                        </span>
+                    </span>
                 </SkillsIconContainer>
             </SkillsInfo>
         </Container>
@@ -105,10 +171,30 @@ const SkillsIconContainer = styled.div`
     grid-gap:1rem;
     place-items:center;
 
+    span{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:last-child{
+            font-size:0.8rem;
+            letter-spacing:0.05rem;
+            box-shadow:0 2px #83a3ef;
+        }
+    }
+
     svg{
-        font-size:3rem;
+        font-size:2.5rem;
         color:#80a6ff;
         font-weight:300;
+    }
+
+    @media screen and (max-width:768px){
+        svg{
+            font-size:2rem;
+            color:#80a6ff;
+            font-weight:300;
+        }
     }
 `
 
