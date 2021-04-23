@@ -30,9 +30,8 @@ export default Header
 const NavBar = styled.div`
     width:100%;
     padding:1.2rem 1.2rem;
-    background-color: #e6edff;
+    background-color: #ffffff;
     position:fixed;
-    box-shadow: 0 6px 20px rgba(93,93,93,0.23);
     z-index:100;
     display:flex;
     align-items:center;
